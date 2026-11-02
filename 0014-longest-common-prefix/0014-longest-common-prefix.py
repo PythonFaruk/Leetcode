@@ -4,6 +4,7 @@ class Solution:
             return ""
         if len(strs) == 1:
             return strs[0]
+
         prefix = strs[0][0]
         counter = 0
         while True:
@@ -17,7 +18,8 @@ class Solution:
                     prefix = prefix[:-1]
                     return prefix
             counter += 1
+
             if counter == len(strs[0]):
                 return prefix
-            print(counter)
+                
             prefix += strs[0][counter]
